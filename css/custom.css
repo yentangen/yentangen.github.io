@@ -1,0 +1,96 @@
+#sidebar-nav
+{
+  background-color:rgba(0,44,88,0.8);
+}
+
+.nav li a
+{
+  font-weight:700;
+  color:#007FFF;
+  transition:color .5s ease-in;
+}
+
+.nav li a:hover
+{
+  font-weight:700;
+  color:#FFF;
+  background-color:rgba(0,44,88,0);
+}
+
+.nav li.active a
+{
+  color:#900;
+  font-weight:700;
+}
+
+.pull-right a:hover
+{
+  color:#FFF !important;
+  transition:color .5s ease-in;
+}
+
+.jumbotron
+{
+  margin-bottom:0;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.vcenter
+{
+  display: flex;
+  align-items: center;
+}
+
+#introbckgrd
+{
+  background-size:cover;
+  background-color:#002C58;
+}
+
+#intro
+{
+  background:inherit;
+  background-size:inherit;
+  background-color:inherit;
+  color:#FFF;
+}
+
+#aboutbckgrd
+{
+  background-size:cover;
+  background-color:#FFF;
+}
+
+#about
+{
+  background:inherit;
+  background-size:inherit;
+  background-color:inherit;
+}
+
+#projectsbckgrd
+{
+  background-color:#C3E7F5;
+}
+
+#projects
+{
+  background-color:inherit;
+}
+
+#footerbckgrd
+{
+  background-color:#3B3A40;
+}
+
+#footer
+{
+  background-color:inherit;
+  color:#77747F;
+}
