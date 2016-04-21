@@ -15,6 +15,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- BounceJS CSS -->
+    <link href="css/bounce.css" rel="stylesheet">
     <!-- Custom made CSS -->
     <link href="css/custom.css" rel="stylesheet">
 
@@ -22,31 +24,52 @@
 
   <body data-spy="scroll" data-target="#sidebar-nav">
     <nav id="sidebar-nav" class="navbar navbar-fixed-top affix">
-      <div class="container">
+      <div class="container-fluid">
+
+<!--         <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar">booyah</span>
+        </a> -->
+
+        <!-- Try to implement this "button" for in case screen size shrinks too small -->
+        <div class="navbar-header">
+          <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
         <div id="sidebar-nav-inner" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="">
               <a href="#top">Top</a>
             </li>
             <li class="">
-              <a href="#aboutheader">About Me</a>
+              <a href="#introheader">Intro</a>
             </li>
             <li class="">
               <a href="#projectsheader">Projects</a>
             </li>
+            <li class="">
+              <a href="#aboutheader">About Me</a>
+            </li>
           </ul>
 
-          <ul class="nav navbar-nav pull-right">
-            <li>
-              <a href="https://www.linkedin.com/in/tangenyen"><i class="fa fa-linkedin-square" style="font-size: 2em;" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a id="githubbtn" href="https://github.com/nibelungvalesti"><i class="fa fa-github" style="font-size: 2em;" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a class="glyphicon glyphicon-envelope" href="#Contact" style="font-size: 2em; padding-top: 18px;" ></a>
-            </li>
-          </ul>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="https://www.linkedin.com/in/tangenyen"><i class="fa fa-linkedin-square" style="font-size: 2em;" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a id="githubbtn" href="https://github.com/nibelungvalesti"><i class="fa fa-github" style="font-size: 2em;" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a class="glyphicon glyphicon-envelope" href="#Contact" style="font-size: 2em; padding-top: 18px;" ></a>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </nav>
@@ -55,74 +78,122 @@
   <div>
     <div>
       <div role="main">
-        <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div id="introbckgrd">
-          <div id="intro" class="jumbotron container">
-            <center>
-              <br><br><br><br><br><br><br>
-              <img src="img/wordcloud.png" alt="Personal Word Cloud">
-              <div class="caption" style="font-size: 12px">
-                **Image provided by <a href="http://www.wordle.net/">Wordle</a> and input extracted from my LinkedIn
-                <a href="https://www.linkedin.com/in/tangenyen">profile</a> (April 2016) with maximum words = 50
-              </div>
-              <br><br><br><br><br><br><br><br><br><br>
-            </center>
+        <div id="topbckgrd" class="window-height vcenter">
+          <div id="top" class="container-fluid">
+            <img class="center-block" src="img/wordcloud.png" alt="Personal Word Cloud">
+            <div class="text-center caption" style="font-size: 12px">
+              **Image provided by <a href="http://www.wordle.net/">Wordle</a> and input extracted from my LinkedIn
+              <a href="https://www.linkedin.com/in/tangenyen">profile</a> (April 2016) with maximum words = 50
+            </div>
           </div>
         </div>
 
-        <div id="aboutbckgrd">
-          <div id="about" class="jumbotron container">
+        <div id="introbckgrd" class="white-background">
+          <div id="intro" class="container-fluid">
+            <span id="introheader"></span>
+            <div class="row">
+              <div class="jumbotron inherit text-center">
+                <p>Tang is a proud alumni of University of California, Davis, College of Engineering (2013) </p>
+              </div>
+            </div>
+            <div class="row jumbotron white-background">
+              <img class="center-block" src="img/ucdaviseng.gif" alt="UC Davis Engineering"></img>
+            </div>
+          </div>
+        </div>
+
+        <div class="blue-background">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="jumbotron inherit">
+                <p>Tang isn't rockstar ninja wizard developer. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="blue-background">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="jumbotron inherit text-right">
+                <p>In fact, he tries to be the complete opposite.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="blue-background">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="jumbotron inherit text-center">
+                <p>Tang joins a team with something new to offer,<br>
+                but strives to ensure that nobody will miss him when he's not around.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="projectsbckgrd" class="white-background">
+          <div id="projects" class="jumbotron container-fluid">
+            <div class="row">
+              <span id="projectsheader"></span><br><br>
+              <h1>Projects</h1>
+            </div>
+            <div class="row">
+              <div class="col-md-4 animate">
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              </div>
+              <div class="col-md-4 animate">
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              </div>
+              <div class="col-md-4 animate">
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="companybckgrd" class="blue-background">
+          <div id="company" class="container-fluid">
+            <div class="row">
+              <span id="projectsheader"></span><br><br>
+              <h1>Professional History</h1>
+              <div class="jumbotron blue-background">
+              <p>Stuff goes here</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="aboutbckgrd" class="window-height white-background">
+          <div id="about" class="jumbotron container-fluid">
             <div class="row text-center">
-              <span id="aboutheader"></span><br><br>
+              <span id="aboutheader"></span>
               <h1>About Me</h1>
             </div>
-            <div class="row row-eq-height">
+            <div class="row">
               <div class="col-md-6 text-center">
                 <br><br><br><br>
                 <p>Hello! My full name is Tang-En Yen (just Tang is fine).</p>
                 <p>I am a trilingual Taiwanese-born, American-raised, and (currently) Japan-employed individual who mainly does backend development.</p>
                 <br>
-                <p>Hobbies consist of darts, billiards, and playing video games.</p>
+                <p>Hobbies consist of throwing darts, shooting billiards, and playing video games.</p>
                 <p>Some of my dreams are owning a seaside residence in Sausalito (San Francisco),
                 participating in the <a href="http://www.virgingalactic.com/human-spaceflight/your-flight-to-space/">Virgin Galactic Spaceflight</a>,
                 and drinking all the kinds of Scotch in the universe.</p>
               </div>
-              <div class="col-md-6 vcenter">
-                <img class="img-responsive img-circle center-block" src="img/profile.png"></img>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="projectsbckgrd">
-          <div id="projects" class="jumbotron container">
-            <span id="projectsheader"></span><br><br>
-            <h1>Projects</h1>
-            <!-- Example row of columns -->
-            <div class="row">
-              <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-              </div>
-              <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-              </div>
-              <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              <div class="col-md-6">
+                <img class="img-circle center-block" src="img/profile.png"></img>
               </div>
             </div>
           </div>
         </div>
 
         <footer>
-          <div id="footerbckgrd">
-            <div id="footer" class="jumbotron container">
-              <div class="container">
+          <div id="footerbckgrd" class="gray-background">
+            <div id="footer" class="jumbotron container-fluid">
+              <div class="container-fluid">
                 <h1>Footer</h1>
                 <!-- Example row of columns -->
                 <p>&copy; 2015 Company, Inc.</p>
@@ -151,10 +222,10 @@
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/jquery-2.2.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/custom.js"></script>
   </body>
 </html>
