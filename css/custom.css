@@ -3,6 +3,26 @@
   background-color:rgba(0,44,88,0.8);
 }
 
+.blue-background{
+  background-color:#C3E7F5;
+}
+
+.gray-background{
+  background-color:#3B3A40;
+}
+
+.white-background{
+  background-color:#FFF;
+}
+
+.inherit {
+  background:inherit;
+}
+
+.icon-bar {
+  background-color: #FFE212;
+}
+
 .nav li a
 {
   font-weight:700;
@@ -34,6 +54,10 @@
   margin-bottom:0;
 }
 
+.navbar-toggle {
+  border: 1px solid #FFE212;
+}
+
 .row-eq-height {
   display: -webkit-box;
   display: -webkit-flex;
@@ -47,36 +71,26 @@
   align-items: center;
 }
 
-#introbckgrd
+.window-height {
+  padding-top:75px;
+  padding-bottom:75px;
+}
+
+#topbckgrd
 {
   background-size:cover;
   background-color:#002C58;
 }
 
-#intro
+#top
 {
   background:inherit;
-  background-size:inherit;
-  background-color:inherit;
   color:#FFF;
-}
-
-#aboutbckgrd
-{
-  background-size:cover;
-  background-color:#FFF;
 }
 
 #about
 {
-  background:inherit;
-  background-size:inherit;
   background-color:inherit;
-}
-
-#projectsbckgrd
-{
-  background-color:#C3E7F5;
 }
 
 #projects
@@ -84,13 +98,19 @@
   background-color:inherit;
 }
 
-#footerbckgrd
+#misc
 {
-  background-color:#3B3A40;
+  background-color:inherit;
 }
 
 #footer
 {
   background-color:inherit;
   color:#77747F;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
