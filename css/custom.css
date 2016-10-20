@@ -1,6 +1,6 @@
 #sidebar-nav
 {
-  background-color:rgba(0,44,88,0.8);
+  background-color:rgba(6,50,87,0.8);
 }
 
 .blue-background{
@@ -34,7 +34,7 @@
 {
   font-weight:700;
   color:#FFF;
-  background-color:rgba(0,44,88,0);
+  background-color:rgba(6,50,87,0);
 }
 
 .nav li.active a
@@ -79,7 +79,7 @@
 #topbckgrd
 {
   background-size:cover;
-  background-color:#002C58;
+  background-color:#063257;
 }
 
 #top
