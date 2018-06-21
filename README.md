@@ -3,6 +3,9 @@ Tang-En Yen's Personal Page
 
 Release Note
 ----------------------------------------
+### 0.0.4
+- [20180621] Updated copyright. Fixed some minor tagging issues. Implemented GTM with AW and GA
+
 ### 0.0.3
 - [20161020] Fixed github URL, some color schemes.
 
